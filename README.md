@@ -8,3 +8,6 @@ I deleted the whole country stats from the original file & just left the stats f
 "Pop_Density.csv"
 https://raw.githubusercontent.com/camillol/cs424p3/master/data/Population-Density%20By%20State.csv 
 I added NYC pop density = 26403 to the GIT hub file from Wiki page
+
+covid_deaths_USA.py
+Calculates the Pearson Correlation Coefficients between deaths & population desnisties
