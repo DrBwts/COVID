@@ -32,9 +32,8 @@ pop_data.set_index('State', inplace=True)
 pop_no_outs = pop_data.drop(['New York city', 'District of Columbia'])
 
 # Pearson Correlation Coefficient
-R   = pearsonr(CV_data_agg['CV_Deaths'], pop_data['Density'])
-R_p = pearsonr(CV_per_Total, pop_data['Density'])
-
+R         = pearsonr(CV_data_agg['CV_Deaths'], pop_data['Density'])
+R_p       = pearsonr(CV_per_Total, pop_data['Density'])
 R_no_outs = pearsonr(CV_data_agg_no_outs['CV_Deaths'], pop_no_outs['Density'])
 
 #plt.scatter(pop_data['Density'], CV_data_agg['CV_Deaths'])
