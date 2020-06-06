@@ -29,7 +29,7 @@ CV_per_Total         = CV_data_agg['CV_Deaths']/CV_data_agg['Total_Deaths'] * 10
 # Population data GIT hub
 pop_data = pd.read_csv("Pop_Density.csv", usecols=[2, 3])
 pop_data.set_index('State', inplace=True)
-pop_no_outs = pop_data.drop(['New York city', 'District of Columbia'])
+pop_no_outs = pop_data.drop(['New York City', 'District of Columbia'])
 
 # Pearson Correlation Coefficient
 R         = pearsonr(CV_data_agg['CV_Deaths'], pop_data['Density'])
